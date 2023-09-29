@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from '../src/components/Home'
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' exact />
+          <Route path='/' exact component={Home} />
         </Routes>
+        <Home />
       </Router>
     </>
   );

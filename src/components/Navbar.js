@@ -25,7 +25,7 @@ function Navbar() {
     return (
         <>
             <nav className='navbar'>
-                <div className='navbar-container'>
+                <div className='navbar-container' onClick={handleClick}>
                     <Link to="/" className='navbar-logo'>
                         TRVL <i className='fab fa-typo3'></i>
                     </Link>
